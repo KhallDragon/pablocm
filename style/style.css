@@ -127,5 +127,6 @@ button.planes__boton:hover{
     }
     .planes__niveles.aos-init.aos-animate {
         margin-bottom: 3rem;
+        padding-inline: 2rem;
     }
 }
