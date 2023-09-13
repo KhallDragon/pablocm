@@ -1,9 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none; }
+
 body{
     background-color: #293241;
     padding-inline: 5rem;
     color: #E0FBFC;
+    
 }
 
+h1{
+    color: #EE6C4D;
+    font-size: 5rem;
+    text-shadow: 10px 10px 10px black;
+    margin-bottom: 2rem;
+}
 .logo{
     height: 50px;
 }
@@ -22,9 +35,97 @@ a.nav-link {
     justify-content: center;
 }
 
+.planes__uno {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .planes__niveles {
     background-color: #4C5769;
     border-radius: 2rem;
     padding: 2rem;
     margin-inline: 1rem;
+     justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 65vh;
+    position: relative;
+    filter: drop-shadow(12px 10px 6px rgba(0, 0, 0, 0.7));
+    transition: all 0.5s;
+}
+
+.planes__niveles.aos-init.aos-animate:hover {
+    transform: scale(1.02);
+}
+
+ul.planes__lista {
+    margin-top: 1.5rem;    
+    list-style: none;
+    padding-left: 0!important;
+}
+ul.planes__lista li{
+    border-bottom: 1px #293241 solid;
+}
+
+
+h3{
+    padding: 1.5rem 2rem;
+    border-bottom: #EE6C4D 2px solid;
+}
+
+.planes__boton {
+    
+    position: relative;
+    bottom: -47px;
+}
+
+button.planes__boton {
+    background-color: #293241;
+    border-radius: 2rem;
+    width: 75%;
+    height: 7vh;
+    box-shadow: 0 6px #EE6C4D;
+    border-bottom: none;
+    border-bottom-style: none;
+    color: #E0FBFC;
+    transition: all 1s;
+    border: none;
+    width: 20vw;
+}
+
+
+button.planes__boton:hover{
+    transform: scale(1.1);
+    background-color: #EE6C4D;
+    color: black;
+    box-shadow: none;
+}
+
+.planes__lista li {
+    margin-top: 0.7rem;
+}
+
+@media screen and (max-width: 768px){
+    .planes__niveles.aos-init.aos-animate {
+        padding-inline: 0.5rem;
+    }
+    h3 {
+        padding: .5rem 1rem;
+        border-bottom: #EE6C4D 2px solid;
+    }
+    ul.planes__lista {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .planes__items {
+        
+        flex-direction: column;
+    }
+    .planes__niveles.aos-init.aos-animate {
+        margin-bottom: 3rem;
+    }
 }
