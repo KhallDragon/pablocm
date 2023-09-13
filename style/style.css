@@ -106,9 +106,62 @@ button.planes__boton:hover{
 .planes__lista li {
     margin-top: 0.7rem;
 }
+.scroll-img {
+    display: none;
+    justify-content: center;
+    filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+    
+  }
+  .scroll-img img {
+    height: 3rem;
+    margin-bottom: 4rem;
+    transition: all 0.5s;
+  }
 
+  .shake-vertical {
+    -webkit-animation: shake-vertical 3s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1s infinite both;
+    animation: shake-vertical 3s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1s infinite both;
+  }
+  .shake-vertical:hover {
+    -webkit-animation: none;
+    animation: none;
+  }
+
+  @keyframes shake-vertical {
+
+    0%,
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  
+    10%,
+    30%,
+    50%,
+    70% {
+      -webkit-transform: translateY(-8px);
+      transform: translateY(-8px);
+    }
+  
+    20%,
+    40%,
+    60% {
+      -webkit-transform: translateY(8px);
+      transform: translateY(8px);
+    }
+  
+    80% {
+      -webkit-transform: translateY(6.4px);
+      transform: translateY(6.4px);
+    }
+  
+    90% {
+      -webkit-transform: translateY(-6.4px);
+      transform: translateY(-6.4px);
+    }
+  }
 @media screen and (max-width: 768px){
-    .planes__niveles.aos-init.aos-animate {
+    .planes__niveles {
         padding-inline: 0.5rem;
     }
     h3 {
@@ -121,12 +174,20 @@ button.planes__boton:hover{
 }
 
 @media screen and (max-width: 500px) {
+    body{
+        padding-inline: 0.5rem;
+    }
+    .scroll-img {
+        display: flex;
+    }
+
     .planes__items {
         
         flex-direction: column;
     }
-    .planes__niveles.aos-init.aos-animate {
+    .planes__niveles {
         margin-bottom: 3rem;
-        padding-inline: 2rem;
+        padding-inline: 1rem;
+        height: auto;
     }
 }
