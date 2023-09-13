@@ -1,0 +1,30 @@
+body{
+    background-color: #293241;
+    padding-inline: 5rem;
+    color: #E0FBFC;
+}
+
+.logo{
+    height: 50px;
+}
+
+a.nav-link {
+    color: #E0FBFC;
+}
+
+.planes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.planes__items {
+    display: flex;
+    justify-content: center;
+}
+
+.planes__niveles {
+    background-color: #4C5769;
+    border-radius: 2rem;
+    padding: 2rem;
+    margin-inline: 1rem;
+}
