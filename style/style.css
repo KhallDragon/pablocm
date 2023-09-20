@@ -2,16 +2,17 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    text-decoration: none; }
+    text-decoration: none;
+ }
 
 body{
     background-color: #293241;
     padding-inline: 5rem;
     color: #E0FBFC;
-    
+    overflow-x: hidden;
 }
 
-h1{
+h2{
     color: #EE6C4D;
     font-size: 5rem;
     text-shadow: 10px 10px 10px black;
@@ -28,7 +29,8 @@ a.nav-link {
 .planes {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;    
+    margin-bottom: 3rem;
 }
 .planes__items {
     display: flex;
@@ -46,11 +48,11 @@ a.nav-link {
     border-radius: 2rem;
     padding: 2rem;
     margin-inline: 1rem;
-     justify-content: space-between;
+    justify-content: space-between;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 65vh;
+    height: auto;
     position: relative;
     filter: drop-shadow(12px 10px 6px rgba(0, 0, 0, 0.7));
     transition: all 0.5s;
@@ -76,12 +78,6 @@ h3{
 }
 
 .planes__boton {
-    
-    position: relative;
-    bottom: -47px;
-}
-
-button.planes__boton {
     background-color: #293241;
     border-radius: 2rem;
     width: 75%;
@@ -92,15 +88,29 @@ button.planes__boton {
     color: #E0FBFC;
     transition: all 1s;
     border: none;
-    width: 20vw;
+    width: 20vw;    
 }
 
+
+.comunidad{
+    border-top: 2px solid #EE6C4D;
+}
+.redes{
+    width: 20vw;
+    -webkit-box-reflect: below 10px linear-gradient(transparent,transparent,rgba(0,0,0,.4));
+}
 
 button.planes__boton:hover{
     transform: scale(1.1);
     background-color: #EE6C4D;
     color: black;
     box-shadow: none;
+}
+
+.swiper{
+    width: 80vw;
+    height: 60vh;
+    margin-top: 2.5rem;
 }
 
 .planes__lista li {
@@ -110,12 +120,27 @@ button.planes__boton:hover{
     display: none;
     justify-content: center;
     filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
-    
   }
   .scroll-img img {
     height: 3rem;
     margin-bottom: 4rem;
     transition: all 0.5s;
+  }
+
+  .scroll-img2 {
+    
+    justify-content: center;
+    filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+    
+  }
+  .scroll-img2 img {
+    height: 2.5rem;
+    margin-top: 1rem;
+    transition: all 1s;
+  }
+
+  .scroll-img2 img:hover{
+    transform: scale(1.2);
   }
 
   .shake-vertical {
@@ -171,14 +196,23 @@ button.planes__boton:hover{
     ul.planes__lista {
         font-size: 0.8rem;
     }
+    .redes{
+        width: 30vw;
+    }
 }
 
 @media screen and (max-width: 500px) {
+    h2 {
+        font-size: 3rem;
+    }   
     body{
         padding-inline: 0.5rem;
     }
     .scroll-img {
         display: flex;
+    }
+    .scroll-img2{
+        display: none;
     }
 
     .planes__items {
@@ -189,5 +223,9 @@ button.planes__boton:hover{
         margin-bottom: 3rem;
         padding-inline: 1rem;
         height: auto;
+    }
+    .redes{
+        width: 75vw;
+        
     }
 }
