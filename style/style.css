@@ -114,6 +114,28 @@ button.planes__boton:hover{
     margin-top: 2.5rem;
 }
 
+.sobremi {
+    display: flex;
+    align-items: center;
+}
+
+.sobremi__img{
+    border-radius: 15rem;
+    height: 50vh;
+    filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.3));
+}
+
+
+.sobremi_texto {
+    font-size: 1.2rem;
+}
+.sobremi_texto {
+    padding-left: 4rem;
+}
+.pablo{
+    margin: 0;
+}
+
 .planes__lista li {
     margin-top: 0.7rem;
 }
@@ -228,5 +250,11 @@ button.planes__boton:hover{
     .redes{
         width: 75vw;
         
+    }
+    .sobremi_texto{
+        padding-top: 1rem;
+    }
+    .sobremi {
+        flex-direction: column-reverse;
     }
 }
